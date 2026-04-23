@@ -120,20 +120,6 @@ export default function App() {
           </div>
         </section>
 
-        <section className="section section--alt" id="about" aria-labelledby="about-title">
-          <div className="container narrow">
-            <h2 id="about-title" className="section__title">
-              {siteData.about.sectionTitle}
-            </h2>
-            <p className="section__lead">{siteData.about.lead}</p>
-            {siteData.about.paragraphs.map((p) => (
-              <p key={p} className="section__text">
-                {p}
-              </p>
-            ))}
-          </div>
-        </section>
-
         <section className="section" id="activity" aria-labelledby="activity-title">
           <div className="container">
             <h2 id="activity-title" className="section__title">
