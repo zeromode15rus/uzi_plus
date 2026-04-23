@@ -299,6 +299,76 @@
   padding: 1.25rem 1.35rem;
 }
 
+.staff-card__layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .staff-card--with-photo .staff-card__layout {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}
+
+.staff-card__photo-wrap {
+  flex-shrink: 0;
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .staff-card__photo-wrap {
+    margin: 0;
+  }
+}
+
+.staff-card__photo {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  object-fit: cover;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+}
+
+.staff-card__main {
+  flex: 1;
+  min-width: 0;
+}
+
+.staff-card__cabinet {
+  margin-top: 1.25rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.staff-card__cabinet-intro {
+  margin: 0 0 0.65rem;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+.staff-card__cabinet-list {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+  font-size: 0.92rem;
+  color: #475569;
+}
+
+.staff-card__cabinet-list li + li {
+  margin-top: 0.35rem;
+}
+
+.staff-card__cabinet-meta {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
 .staff-card__name {
   margin: 0 0 1rem;
   font-size: 1.15rem;
@@ -377,14 +447,102 @@
   color: #1e293b;
 }
 
+.license-block__dd-text p {
+  margin: 0 0 0.65rem;
+}
+
+.license-block__dd-text p:last-child {
+  margin-bottom: 0;
+}
+
 .license-block__action {
   margin: 1.5rem 0 0;
 }
 
-.license-block__hint {
-  margin: 1rem 0 0;
-  font-size: 0.85rem;
-  color: #64748b;
+.license-document {
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 1.5rem 1.35rem 1.35rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.92rem;
+  color: #1e293b;
+}
+
+.license-document__form {
+  margin: 0 0 0.35rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+
+.license-document__serial {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+}
+
+.license-document__issuer {
+  margin: 0 0 1.1rem;
+  line-height: 1.45;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.license-document__title {
+  margin: 0 0 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #0f172a;
+}
+
+.license-document__number {
+  margin: 0 0 0.2rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.license-document__date {
+  margin: 0 0 0.9rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.license-document__subject {
+  margin: 0 0 0.4rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.license-document__appendix {
+  margin: 0;
+  text-align: center;
+  font-size: 0.88rem;
+  color: #475569;
+}
+
+.license-document__divider {
+  height: 1px;
+  margin: 1.1rem 0 0;
+  background: linear-gradient(90deg, transparent, #cbd5e1, transparent);
+}
+
+.license-document__licensee {
+  margin: 0 0 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #334155;
+}
+
+.license-document__licensee p {
+  margin: 0 0 0.55rem;
+}
+
+.license-document__licensee p:last-child {
+  margin-bottom: 0;
 }
 
 .table-wrap {
