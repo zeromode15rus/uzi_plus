@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.svg" />
     <meta
       name="description"
       content="Ольховой Сергей Петрович — врач УЗИ в Моздоке. Кабинет ультразвуковой диагностики, запись на приём по телефону."
@@ -18,22 +20,39 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.olhovoi.ru/" />
+    <meta property="og:site_name" content="Ольховой УЗИ" />
+    <meta name="application-name" content="Ольховой УЗИ" />
     <title>Ольховой Сергей Петрович — врач УЗИ в Моздоке</title>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Physician",
-        "name": "Ольховой Сергей Петрович",
-        "medicalSpecialty": "Ultrasound",
-        "description": "Врач ультразвуковой диагностики. Кабинет УЗИ в Моздоке.",
-        "url": "https://www.olhovoi.ru/",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Моздок",
-          "streetAddress": "Ул Кирова 71 а",
-          "addressCountry": "RU"
-        },
-        "telephone": ["+79280651320", "+79280707597", "+79633771045"]
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://www.olhovoi.ru/#website",
+            "url": "https://www.olhovoi.ru/",
+            "name": "Ольховой УЗИ",
+            "alternateName": "Ольховой Сергей Петрович — врач УЗИ"
+          },
+          {
+            "@type": "Physician",
+            "@id": "https://www.olhovoi.ru/#physician",
+            "name": "Ольховой Сергей Петрович",
+            "medicalSpecialty": "Ultrasound",
+            "description": "Врач ультразвуковой диагностики. Кабинет УЗИ в Моздоке.",
+            "url": "https://www.olhovoi.ru/",
+            "mainEntityOfPage": {
+              "@id": "https://www.olhovoi.ru/#website"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Моздок",
+              "streetAddress": "Ул Кирова 71 а",
+              "addressCountry": "RU"
+            },
+            "telephone": ["+79280651320", "+79280707597", "+79633771045"]
+          }
+        ]
       }
     </script>
   </head>
